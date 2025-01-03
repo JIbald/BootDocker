@@ -1,3 +1,5 @@
 FROM debian:stable-slim
 
-CMD ["echo", "hello world"]
+COPY BootDocker /bin/BootDocker
+
+CMD [ "/bin/BootDocker" ]
